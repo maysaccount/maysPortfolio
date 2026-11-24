@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2D Asteroids — May</title>
+<meta name="description" content="May's portfolio: Unity games written in C#, a 3D dungeon prototype, 3D modelling and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,800;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../assets/sprite-rocket.png">
+<script>
+(function(){try{var t=localStorage.getItem('may-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"><i style="--x:0%;--y:0%;--d:0.0s;--s:1px"></i><i style="--x:37%;--y:53%;--d:0.6s;--s:2px"></i><i style="--x:74%;--y:6%;--d:1.2s;--s:3px"></i><i style="--x:11%;--y:59%;--d:1.8s;--s:1px"></i><i style="--x:48%;--y:12%;--d:2.4s;--s:2px"></i><i style="--x:85%;--y:65%;--d:3.0s;--s:3px"></i><i style="--x:22%;--y:18%;--d:3.6s;--s:1px"></i><i style="--x:59%;--y:71%;--d:0.0s;--s:2px"></i><i style="--x:96%;--y:24%;--d:0.6s;--s:3px"></i><i style="--x:33%;--y:77%;--d:1.2s;--s:1px"></i><i style="--x:70%;--y:30%;--d:1.8s;--s:2px"></i><i style="--x:7%;--y:83%;--d:2.4s;--s:3px"></i><i style="--x:44%;--y:36%;--d:3.0s;--s:1px"></i><i style="--x:81%;--y:89%;--d:3.6s;--s:2px"></i><i style="--x:18%;--y:42%;--d:0.0s;--s:3px"></i><i style="--x:55%;--y:95%;--d:0.6s;--s:1px"></i><i style="--x:92%;--y:48%;--d:1.2s;--s:2px"></i><i style="--x:29%;--y:1%;--d:1.8s;--s:3px"></i><i style="--x:66%;--y:54%;--d:2.4s;--s:1px"></i><i style="--x:3%;--y:7%;--d:3.0s;--s:2px"></i><i style="--x:40%;--y:60%;--d:3.6s;--s:3px"></i><i style="--x:77%;--y:13%;--d:0.0s;--s:1px"></i><i style="--x:14%;--y:66%;--d:0.6s;--s:2px"></i><i style="--x:51%;--y:19%;--d:1.2s;--s:3px"></i><i style="--x:88%;--y:72%;--d:1.8s;--s:1px"></i><i style="--x:25%;--y:25%;--d:2.4s;--s:2px"></i><i style="--x:62%;--y:78%;--d:3.0s;--s:3px"></i><i style="--x:99%;--y:31%;--d:3.6s;--s:1px"></i><i style="--x:36%;--y:84%;--d:0.0s;--s:2px"></i><i style="--x:73%;--y:37%;--d:0.6s;--s:3px"></i><i style="--x:10%;--y:90%;--d:1.2s;--s:1px"></i><i style="--x:47%;--y:43%;--d:1.8s;--s:2px"></i><i style="--x:84%;--y:96%;--d:2.4s;--s:3px"></i><i style="--x:21%;--y:49%;--d:3.0s;--s:1px"></i><i style="--x:58%;--y:2%;--d:3.6s;--s:2px"></i><i style="--x:95%;--y:55%;--d:0.0s;--s:3px"></i><i style="--x:32%;--y:8%;--d:0.6s;--s:1px"></i><i style="--x:69%;--y:61%;--d:1.2s;--s:2px"></i><i style="--x:6%;--y:14%;--d:1.8s;--s:3px"></i><i style="--x:43%;--y:67%;--d:2.4s;--s:1px"></i><i style="--x:80%;--y:20%;--d:3.0s;--s:2px"></i><i style="--x:17%;--y:73%;--d:3.6s;--s:3px"></i><i style="--x:54%;--y:26%;--d:0.0s;--s:1px"></i><i style="--x:91%;--y:79%;--d:0.6s;--s:2px"></i><i style="--x:28%;--y:32%;--d:1.2s;--s:3px"></i><i style="--x:65%;--y:85%;--d:1.8s;--s:1px"></i><i style="--x:2%;--y:38%;--d:2.4s;--s:2px"></i><i style="--x:39%;--y:91%;--d:3.0s;--s:3px"></i><i style="--x:76%;--y:44%;--d:3.6s;--s:1px"></i><i style="--x:13%;--y:97%;--d:0.0s;--s:2px"></i><i style="--x:50%;--y:50%;--d:0.6s;--s:3px"></i><i style="--x:87%;--y:3%;--d:1.2s;--s:1px"></i><i style="--x:24%;--y:56%;--d:1.8s;--s:2px"></i><i style="--x:61%;--y:9%;--d:2.4s;--s:3px"></i><i style="--x:98%;--y:62%;--d:3.0s;--s:1px"></i><i style="--x:35%;--y:15%;--d:3.6s;--s:2px"></i><i style="--x:72%;--y:68%;--d:0.0s;--s:3px"></i><i style="--x:9%;--y:21%;--d:0.6s;--s:1px"></i><i style="--x:46%;--y:74%;--d:1.2s;--s:2px"></i><i style="--x:83%;--y:27%;--d:1.8s;--s:3px"></i><i style="--x:20%;--y:80%;--d:2.4s;--s:1px"></i><i style="--x:57%;--y:33%;--d:3.0s;--s:2px"></i><i style="--x:94%;--y:86%;--d:3.6s;--s:3px"></i><i style="--x:31%;--y:39%;--d:0.0s;--s:1px"></i><i style="--x:68%;--y:92%;--d:0.6s;--s:2px"></i><i style="--x:5%;--y:45%;--d:1.2s;--s:3px"></i><i style="--x:42%;--y:98%;--d:1.8s;--s:1px"></i><i style="--x:79%;--y:51%;--d:2.4s;--s:2px"></i><i style="--x:16%;--y:4%;--d:3.0s;--s:3px"></i><i style="--x:53%;--y:57%;--d:3.6s;--s:1px"></i></div><div class="wrap"><nav>
+  <a class="logo" href="../index.html"><img src="../assets/sprite-rocket.png" alt="">May</a>
+  <ul><li><a href="../index.html#games">Games</a></li><li><a href="../index.html#code">Code</a></li><li><a href="../index.html#growth">Growth</a></li><li><a href="../index.html#more">More</a></li><li><button class="pill" id="theme" type="button" aria-label="Switch between light and dark">☾ / ☀</button></li></ul>
+</nav><main id="main">
+  <div class="crumbs"><a href="../index.html">← Home</a><span>/</span><span>2D Asteroids</span></div>
+  <header class="phead">
+    <h1>2D Asteroids</h1>
+    <p class="lead">Shoot the floating space rocks with your rocket. Crash into one and you lose a life; lose three and it&#x27;s over.</p>
+    <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div>
+  </header>
+  <section class="psec" style="border-top:0;padding-top:0">
+    <video class="media" src="../assets/asteroids-gameplay.mp4" poster="../assets/asteroids-thumb.jpg" controls preload="none" playsinline></video>
+  </section>
+  <section class="psec">
+    <h2>Player controls</h2>
+    <p>Speed and turn speed are applied through the Rigidbody on the specific axis. Pressing space instantiates a bullet from the ship&#x27;s current position and rotation. If a bullet touches an object with the enemy prefab it destroys it and adds 10 to the score.</p>
+    <div class="shots"><figure><img src="../assets/scripts/asteroids-playercontrol.png" alt="Player controls script" width="847" height="621" loading="lazy" decoding="async"><figcaption>PlayerControl.cs</figcaption></figure><figure><img src="../assets/scripts/asteroids-playerammo.png" alt="Player controls script" width="857" height="531" loading="lazy" decoding="async"><figcaption>PlayerAmmo.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Screen wrap and clean-up</h2>
+    <p>If the player goes off the top of the screen they reappear at the bottom. If an asteroid or bullet goes off screen it gets destroyed so nothing useless keeps running.</p>
+    <div class="shots"><figure><img src="../assets/scripts/asteroids-restarttop.png" alt="Screen wrap and clean-up script" width="610" height="709" loading="lazy" decoding="async"><figcaption>RestartTop.cs</figcaption></figure><figure><img src="../assets/scripts/asteroids-restartside.png" alt="Screen wrap and clean-up script" width="868" height="596" loading="lazy" decoding="async"><figcaption>RestartSide.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Asteroids</h2>
+    <p>Asteroids spawn at a random point below the map and float up to the top. Touching the player takes a life and respawns the ship in the middle so the player notices. Touching a bullet destroys the bullet so it&#x27;s removed from the scene.</p>
+    <div class="shots"><figure><img src="../assets/scripts/asteroids-spawning.png" alt="Asteroids script" width="897" height="473" loading="lazy" decoding="async"><figcaption>Spawning.cs</figcaption></figure><figure><img src="../assets/scripts/asteroids-destroyer.png" alt="Asteroids script" width="837" height="664" loading="lazy" decoding="async"><figcaption>Destroyer.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Score and lives</h2>
+    <p>Score and lives are stored as text objects so they update when the code does its thing. At 0 lives the game shows a “You Lose” message until the scene reloads. It also disables the controls script and removes gravity, so the ship falls into the void for a fun death animation.</p>
+    <div class="shots"><figure><img src="../assets/scripts/asteroids-score.png" alt="Score and lives script" width="812" height="1025" loading="lazy" decoding="async"><figcaption>Score.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Typed up: Controls.cs — move with physics, shoot with Instantiate</h2>
+    <div class="codewrap">
+      <figure class="codefig">
+        <figcaption><span class="dot"></span><span class="dot"></span><span class="dot"></span> Controls.cs</figcaption>
+<pre><code><span class="kw">using</span> UnityEngine;
+
+<span class="kw">public</span> <span class="kw">class</span> Controls : <span class="ty">MonoBehaviour</span>
+{
+    <span class="kw">public</span> <span class="kw">float</span> speed = <span class="nu">0</span>;
+    <span class="kw">public</span> <span class="ty">Rigidbody2D</span> rigid;
+    <span class="kw">public</span> <span class="kw">float</span> turnspeed = <span class="nu">0</span>;
+    <span class="kw">public</span> <span class="ty">GameObject</span> ammoprefabs;
+
+    <span class="kw">void</span> <span class="fn">Update</span>()
+    {
+        <span class="kw">float</span> x = <span class="ty">Input</span>.<span class="fn">GetAxis</span>(<span class="st">&quot;Horizontal&quot;</span>);
+        <span class="kw">float</span> y = <span class="ty">Input</span>.<span class="fn">GetAxis</span>(<span class="st">&quot;Vertical&quot;</span>);
+        <span class="cm">//transform.Translate(transform.up * y * speed * Time.deltaTime);</span>
+        rigid.<span class="fn">MovePosition</span>(transform.position + (transform.up * y * speed));
+        <span class="cm">//transform.Rotate(0, 0, -x * turnspeed * Time.deltaTime);</span>
+        rigid.<span class="fn">MoveRotation</span>(rigid.rotation + (-x * turnspeed));
+        <span class="fn">ammo</span>();
+    }
+
+    <span class="kw">public</span> <span class="kw">void</span> <span class="fn">ammo</span>()
+    {
+        <span class="kw">if</span> (<span class="ty">Input</span>.<span class="fn">GetKeyDown</span>(<span class="ty">KeyCode</span>.Space))
+        {
+            <span class="fn">Instantiate</span>(ammoprefabs, transform.position, transform.rotation);
+        }
+    }
+}</code></pre>
+      </figure>
+      <ol class="callouts"><li><b>→</b><span>GetAxis gives a number from -1 to 1, so one line covers left and right. The two commented-out lines are the first attempt with transform.Translate; switching to Rigidbody2D.MovePosition keeps collisions working.</span></li></ol>
+    </div>
+  </section><div class="pn"><a href="coin-vacuum.html">← 2D Coin Vacuum</a><a href="endless-faller.html">2D Endless Faller →</a></div></main><footer>
+  <span>May · Portfolio</span>
+  <span>Built at Overworld AMP</span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');if(!b)return;
+  b.addEventListener('click',function(){
+    var r=document.documentElement,cur=r.getAttribute('data-theme');
+    var sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+    var now=cur?(cur==='dark'?'light':'dark'):(sysDark?'light':'dark');
+    r.setAttribute('data-theme',now);try{localStorage.setItem('may-theme',now);}catch(e){}
+  });
+  // hover previews
+  document.querySelectorAll('.card').forEach(function(c){
+    var v=c.querySelector('video');if(!v)return;
+    c.addEventListener('mouseenter',function(){if(!v.src){v.src=v.dataset.src;}v.play().then(function(){v.classList.add('on')}).catch(function(){});});
+    c.addEventListener('mouseleave',function(){v.pause();v.classList.remove('on');});
+  });
+})();
+</script>
+</body>
+</html>

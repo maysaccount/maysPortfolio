@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2D Coin Vacuum — May</title>
+<meta name="description" content="May's portfolio: Unity games written in C#, a 3D dungeon prototype, 3D modelling and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,800;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../assets/sprite-rocket.png">
+<script>
+(function(){try{var t=localStorage.getItem('may-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"><i style="--x:0%;--y:0%;--d:0.0s;--s:1px"></i><i style="--x:37%;--y:53%;--d:0.6s;--s:2px"></i><i style="--x:74%;--y:6%;--d:1.2s;--s:3px"></i><i style="--x:11%;--y:59%;--d:1.8s;--s:1px"></i><i style="--x:48%;--y:12%;--d:2.4s;--s:2px"></i><i style="--x:85%;--y:65%;--d:3.0s;--s:3px"></i><i style="--x:22%;--y:18%;--d:3.6s;--s:1px"></i><i style="--x:59%;--y:71%;--d:0.0s;--s:2px"></i><i style="--x:96%;--y:24%;--d:0.6s;--s:3px"></i><i style="--x:33%;--y:77%;--d:1.2s;--s:1px"></i><i style="--x:70%;--y:30%;--d:1.8s;--s:2px"></i><i style="--x:7%;--y:83%;--d:2.4s;--s:3px"></i><i style="--x:44%;--y:36%;--d:3.0s;--s:1px"></i><i style="--x:81%;--y:89%;--d:3.6s;--s:2px"></i><i style="--x:18%;--y:42%;--d:0.0s;--s:3px"></i><i style="--x:55%;--y:95%;--d:0.6s;--s:1px"></i><i style="--x:92%;--y:48%;--d:1.2s;--s:2px"></i><i style="--x:29%;--y:1%;--d:1.8s;--s:3px"></i><i style="--x:66%;--y:54%;--d:2.4s;--s:1px"></i><i style="--x:3%;--y:7%;--d:3.0s;--s:2px"></i><i style="--x:40%;--y:60%;--d:3.6s;--s:3px"></i><i style="--x:77%;--y:13%;--d:0.0s;--s:1px"></i><i style="--x:14%;--y:66%;--d:0.6s;--s:2px"></i><i style="--x:51%;--y:19%;--d:1.2s;--s:3px"></i><i style="--x:88%;--y:72%;--d:1.8s;--s:1px"></i><i style="--x:25%;--y:25%;--d:2.4s;--s:2px"></i><i style="--x:62%;--y:78%;--d:3.0s;--s:3px"></i><i style="--x:99%;--y:31%;--d:3.6s;--s:1px"></i><i style="--x:36%;--y:84%;--d:0.0s;--s:2px"></i><i style="--x:73%;--y:37%;--d:0.6s;--s:3px"></i><i style="--x:10%;--y:90%;--d:1.2s;--s:1px"></i><i style="--x:47%;--y:43%;--d:1.8s;--s:2px"></i><i style="--x:84%;--y:96%;--d:2.4s;--s:3px"></i><i style="--x:21%;--y:49%;--d:3.0s;--s:1px"></i><i style="--x:58%;--y:2%;--d:3.6s;--s:2px"></i><i style="--x:95%;--y:55%;--d:0.0s;--s:3px"></i><i style="--x:32%;--y:8%;--d:0.6s;--s:1px"></i><i style="--x:69%;--y:61%;--d:1.2s;--s:2px"></i><i style="--x:6%;--y:14%;--d:1.8s;--s:3px"></i><i style="--x:43%;--y:67%;--d:2.4s;--s:1px"></i><i style="--x:80%;--y:20%;--d:3.0s;--s:2px"></i><i style="--x:17%;--y:73%;--d:3.6s;--s:3px"></i><i style="--x:54%;--y:26%;--d:0.0s;--s:1px"></i><i style="--x:91%;--y:79%;--d:0.6s;--s:2px"></i><i style="--x:28%;--y:32%;--d:1.2s;--s:3px"></i><i style="--x:65%;--y:85%;--d:1.8s;--s:1px"></i><i style="--x:2%;--y:38%;--d:2.4s;--s:2px"></i><i style="--x:39%;--y:91%;--d:3.0s;--s:3px"></i><i style="--x:76%;--y:44%;--d:3.6s;--s:1px"></i><i style="--x:13%;--y:97%;--d:0.0s;--s:2px"></i><i style="--x:50%;--y:50%;--d:0.6s;--s:3px"></i><i style="--x:87%;--y:3%;--d:1.2s;--s:1px"></i><i style="--x:24%;--y:56%;--d:1.8s;--s:2px"></i><i style="--x:61%;--y:9%;--d:2.4s;--s:3px"></i><i style="--x:98%;--y:62%;--d:3.0s;--s:1px"></i><i style="--x:35%;--y:15%;--d:3.6s;--s:2px"></i><i style="--x:72%;--y:68%;--d:0.0s;--s:3px"></i><i style="--x:9%;--y:21%;--d:0.6s;--s:1px"></i><i style="--x:46%;--y:74%;--d:1.2s;--s:2px"></i><i style="--x:83%;--y:27%;--d:1.8s;--s:3px"></i><i style="--x:20%;--y:80%;--d:2.4s;--s:1px"></i><i style="--x:57%;--y:33%;--d:3.0s;--s:2px"></i><i style="--x:94%;--y:86%;--d:3.6s;--s:3px"></i><i style="--x:31%;--y:39%;--d:0.0s;--s:1px"></i><i style="--x:68%;--y:92%;--d:0.6s;--s:2px"></i><i style="--x:5%;--y:45%;--d:1.2s;--s:3px"></i><i style="--x:42%;--y:98%;--d:1.8s;--s:1px"></i><i style="--x:79%;--y:51%;--d:2.4s;--s:2px"></i><i style="--x:16%;--y:4%;--d:3.0s;--s:3px"></i><i style="--x:53%;--y:57%;--d:3.6s;--s:1px"></i></div><div class="wrap"><nav>
+  <a class="logo" href="../index.html"><img src="../assets/sprite-rocket.png" alt="">May</a>
+  <ul><li><a href="../index.html#games">Games</a></li><li><a href="../index.html#code">Code</a></li><li><a href="../index.html#growth">Growth</a></li><li><a href="../index.html#more">More</a></li><li><button class="pill" id="theme" type="button" aria-label="Switch between light and dark">☾ / ☀</button></li></ul>
+</nav><main id="main">
+  <div class="crumbs"><a href="../index.html">← Home</a><span>/</span><span>2D Coin Vacuum</span></div>
+  <header class="phead">
+    <h1>2D Coin Vacuum</h1>
+    <p class="lead">Race an evil vacuum to 35 coins before 100 seconds run out. Fake coins cost you a point.</p>
+    <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div>
+  </header>
+  <section class="psec" style="border-top:0;padding-top:0">
+    <video class="media" src="../assets/coin-vacuum-gameplay.mp4" poster="../assets/coin-vacuum-thumb.jpg" controls preload="none" playsinline></video>
+  </section>
+  <section class="psec">
+    <h2>Controls</h2>
+    <p>The player uses Vector3 directions on the x and y axis. Speed is a public int so it&#x27;s easy to configure in the Inspector. The enemy only moves if there is a coin in the scene, and then heads towards it on the x and y axis. It picks the coin closest to it, which makes the race a challenge.</p>
+    <div class="shots"><figure><img src="../assets/scripts/coin-vacuum-playercontrols.png" alt="Controls script" width="563" height="308" loading="lazy" decoding="async"><figcaption>PlayerControls.cs</figcaption></figure><figure><img src="../assets/scripts/coin-vacuum-enemycontrols.png" alt="Controls script" width="885" height="653" loading="lazy" decoding="async"><figcaption>EnemyControls.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Score managers</h2>
+    <p>Score starts at 0. Touching a coin adds 1 to the text on the canvas; touching a fake coin takes 1 away. The enemy has its own ScoreManager doing the same thing.</p>
+    <div class="shots"><figure><img src="../assets/scripts/coin-vacuum-scoremanagerplayer.png" alt="Score managers script" width="606" height="555" loading="lazy" decoding="async"><figcaption>ScoreManagerPlayer.cs</figcaption></figure><figure><img src="../assets/scripts/coin-vacuum-scoremanagerenemy.png" alt="Score managers script" width="602" height="610" loading="lazy" decoding="async"><figcaption>ScoreManagerEnemy.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Coin spawning and despawning</h2>
+    <p>Coins spawn at a random point in the scene every 2 seconds, and fake coins every 3 seconds, checked with a Time.deltaTime timer. If a coin hasn&#x27;t been collected after 10 seconds it is removed.</p>
+    <div class="shots"><figure><img src="../assets/scripts/coin-vacuum-coinspawner.png" alt="Coin spawning and despawning script" width="794" height="1048" loading="lazy" decoding="async"><figcaption>CoinSpawner.cs</figcaption></figure><figure><img src="../assets/scripts/coin-vacuum-coindespawner.png" alt="Coin spawning and despawning script" width="528" height="408" loading="lazy" decoding="async"><figcaption>CoinDespawner.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Timer</h2>
+    <p>The timer takes one off every second using Time.deltaTime. If the player&#x27;s score is over 35 before it ends they win. At 0 the scene reloads to restart the game.</p>
+    <div class="shots"><figure><img src="../assets/scripts/coin-vacuum-timer.png" alt="Timer script" width="584" height="710" loading="lazy" decoding="async"><figcaption>Timer.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Typed up: EvilPlayerControls.cs — find the nearest coin</h2>
+    <div class="codewrap">
+      <figure class="codefig">
+        <figcaption><span class="dot"></span><span class="dot"></span><span class="dot"></span> EvilPlayerControls.cs</figcaption>
+<pre><code><span class="kw">using</span> UnityEngine;
+
+<span class="kw">public</span> <span class="kw">class</span> EvilPlayerControls : <span class="ty">MonoBehaviour</span>
+{
+    <span class="kw">public</span> <span class="kw">int</span> speed = <span class="nu">0</span>;
+
+    <span class="kw">void</span> <span class="fn">Update</span>()
+    {
+        <span class="ty">GameObject</span> TargetCoin = <span class="fn">Findcoin</span>();
+        <span class="kw">if</span> (TargetCoin != <span class="kw">null</span>)
+        {
+            <span class="ty">Vector3</span> dir = TargetCoin.transform.position - transform.position;
+            transform.<span class="fn">Translate</span>(dir.normalized * speed * <span class="ty">Time</span>.deltaTime);
+        }
+    }
+
+    <span class="ty">GameObject</span> <span class="fn">Findcoin</span>()
+    {
+        <span class="kw">float</span> Closest = <span class="ty">Mathf</span>.Infinity;
+        <span class="ty">GameObject</span> coin = <span class="kw">null</span>;
+
+        <span class="kw">foreach</span> (<span class="ty">GameObject</span> CheckingCoin <span class="kw">in</span> <span class="ty">Spawner</span>.collectables)
+        {
+            <span class="kw">float</span> distance = <span class="ty">Vector3</span>.<span class="fn">Distance</span>(CheckingCoin.transform.position, transform.position);
+            <span class="kw">if</span> (distance &lt; Closest)
+            {
+                coin = CheckingCoin;
+                Closest = distance;
+            }
+        }
+        <span class="kw">return</span> coin;
+    }
+}</code></pre>
+      </figure>
+      <ol class="callouts"><li><b>→</b><span>Findcoin() loops over every coin the spawner knows about and keeps the one with the smallest distance. Update() then moves towards it. The same idea runs the evil vacuum on the home page.</span></li></ol>
+    </div>
+  </section><section class="psec"><h2>More clips</h2><div class="clips"><figure><video src="../assets/coin-vacuum-score-gameplay.mp4" controls preload="metadata" playsinline muted></video><figcaption>Both score managers running</figcaption></figure><figure><video src="../assets/coin-vacuum-spawn-gameplay.mp4" controls preload="metadata" playsinline muted></video><figcaption>Coins spawning and despawning</figcaption></figure></div></section><div class="pn"><span></span><a href="asteroids.html">2D Asteroids →</a></div></main><footer>
+  <span>May · Portfolio</span>
+  <span>Built at Overworld AMP</span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');if(!b)return;
+  b.addEventListener('click',function(){
+    var r=document.documentElement,cur=r.getAttribute('data-theme');
+    var sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+    var now=cur?(cur==='dark'?'light':'dark'):(sysDark?'light':'dark');
+    r.setAttribute('data-theme',now);try{localStorage.setItem('may-theme',now);}catch(e){}
+  });
+  // hover previews
+  document.querySelectorAll('.card').forEach(function(c){
+    var v=c.querySelector('video');if(!v)return;
+    c.addEventListener('mouseenter',function(){if(!v.src){v.src=v.dataset.src;}v.play().then(function(){v.classList.add('on')}).catch(function(){});});
+    c.addEventListener('mouseleave',function(){v.pause();v.classList.remove('on');});
+  });
+})();
+</script>
+</body>
+</html>

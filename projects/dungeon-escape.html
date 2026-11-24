@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dungeon escape — 3D prototype — May</title>
+<meta name="description" content="May's portfolio: Unity games written in C#, a 3D dungeon prototype, 3D modelling and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,800;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../assets/sprite-rocket.png">
+<script>
+(function(){try{var t=localStorage.getItem('may-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"><i style="--x:0%;--y:0%;--d:0.0s;--s:1px"></i><i style="--x:37%;--y:53%;--d:0.6s;--s:2px"></i><i style="--x:74%;--y:6%;--d:1.2s;--s:3px"></i><i style="--x:11%;--y:59%;--d:1.8s;--s:1px"></i><i style="--x:48%;--y:12%;--d:2.4s;--s:2px"></i><i style="--x:85%;--y:65%;--d:3.0s;--s:3px"></i><i style="--x:22%;--y:18%;--d:3.6s;--s:1px"></i><i style="--x:59%;--y:71%;--d:0.0s;--s:2px"></i><i style="--x:96%;--y:24%;--d:0.6s;--s:3px"></i><i style="--x:33%;--y:77%;--d:1.2s;--s:1px"></i><i style="--x:70%;--y:30%;--d:1.8s;--s:2px"></i><i style="--x:7%;--y:83%;--d:2.4s;--s:3px"></i><i style="--x:44%;--y:36%;--d:3.0s;--s:1px"></i><i style="--x:81%;--y:89%;--d:3.6s;--s:2px"></i><i style="--x:18%;--y:42%;--d:0.0s;--s:3px"></i><i style="--x:55%;--y:95%;--d:0.6s;--s:1px"></i><i style="--x:92%;--y:48%;--d:1.2s;--s:2px"></i><i style="--x:29%;--y:1%;--d:1.8s;--s:3px"></i><i style="--x:66%;--y:54%;--d:2.4s;--s:1px"></i><i style="--x:3%;--y:7%;--d:3.0s;--s:2px"></i><i style="--x:40%;--y:60%;--d:3.6s;--s:3px"></i><i style="--x:77%;--y:13%;--d:0.0s;--s:1px"></i><i style="--x:14%;--y:66%;--d:0.6s;--s:2px"></i><i style="--x:51%;--y:19%;--d:1.2s;--s:3px"></i><i style="--x:88%;--y:72%;--d:1.8s;--s:1px"></i><i style="--x:25%;--y:25%;--d:2.4s;--s:2px"></i><i style="--x:62%;--y:78%;--d:3.0s;--s:3px"></i><i style="--x:99%;--y:31%;--d:3.6s;--s:1px"></i><i style="--x:36%;--y:84%;--d:0.0s;--s:2px"></i><i style="--x:73%;--y:37%;--d:0.6s;--s:3px"></i><i style="--x:10%;--y:90%;--d:1.2s;--s:1px"></i><i style="--x:47%;--y:43%;--d:1.8s;--s:2px"></i><i style="--x:84%;--y:96%;--d:2.4s;--s:3px"></i><i style="--x:21%;--y:49%;--d:3.0s;--s:1px"></i><i style="--x:58%;--y:2%;--d:3.6s;--s:2px"></i><i style="--x:95%;--y:55%;--d:0.0s;--s:3px"></i><i style="--x:32%;--y:8%;--d:0.6s;--s:1px"></i><i style="--x:69%;--y:61%;--d:1.2s;--s:2px"></i><i style="--x:6%;--y:14%;--d:1.8s;--s:3px"></i><i style="--x:43%;--y:67%;--d:2.4s;--s:1px"></i><i style="--x:80%;--y:20%;--d:3.0s;--s:2px"></i><i style="--x:17%;--y:73%;--d:3.6s;--s:3px"></i><i style="--x:54%;--y:26%;--d:0.0s;--s:1px"></i><i style="--x:91%;--y:79%;--d:0.6s;--s:2px"></i><i style="--x:28%;--y:32%;--d:1.2s;--s:3px"></i><i style="--x:65%;--y:85%;--d:1.8s;--s:1px"></i><i style="--x:2%;--y:38%;--d:2.4s;--s:2px"></i><i style="--x:39%;--y:91%;--d:3.0s;--s:3px"></i><i style="--x:76%;--y:44%;--d:3.6s;--s:1px"></i><i style="--x:13%;--y:97%;--d:0.0s;--s:2px"></i><i style="--x:50%;--y:50%;--d:0.6s;--s:3px"></i><i style="--x:87%;--y:3%;--d:1.2s;--s:1px"></i><i style="--x:24%;--y:56%;--d:1.8s;--s:2px"></i><i style="--x:61%;--y:9%;--d:2.4s;--s:3px"></i><i style="--x:98%;--y:62%;--d:3.0s;--s:1px"></i><i style="--x:35%;--y:15%;--d:3.6s;--s:2px"></i><i style="--x:72%;--y:68%;--d:0.0s;--s:3px"></i><i style="--x:9%;--y:21%;--d:0.6s;--s:1px"></i><i style="--x:46%;--y:74%;--d:1.2s;--s:2px"></i><i style="--x:83%;--y:27%;--d:1.8s;--s:3px"></i><i style="--x:20%;--y:80%;--d:2.4s;--s:1px"></i><i style="--x:57%;--y:33%;--d:3.0s;--s:2px"></i><i style="--x:94%;--y:86%;--d:3.6s;--s:3px"></i><i style="--x:31%;--y:39%;--d:0.0s;--s:1px"></i><i style="--x:68%;--y:92%;--d:0.6s;--s:2px"></i><i style="--x:5%;--y:45%;--d:1.2s;--s:3px"></i><i style="--x:42%;--y:98%;--d:1.8s;--s:1px"></i><i style="--x:79%;--y:51%;--d:2.4s;--s:2px"></i><i style="--x:16%;--y:4%;--d:3.0s;--s:3px"></i><i style="--x:53%;--y:57%;--d:3.6s;--s:1px"></i></div><div class="wrap"><nav>
+  <a class="logo" href="../index.html"><img src="../assets/sprite-rocket.png" alt="">May</a>
+  <ul><li><a href="../index.html#games">Games</a></li><li><a href="../index.html#code">Code</a></li><li><a href="../index.html#growth">Growth</a></li><li><a href="../index.html#more">More</a></li><li><button class="pill" id="theme" type="button" aria-label="Switch between light and dark">☾ / ☀</button></li></ul>
+</nav><main id="main">
+  <div class="crumbs"><a href="../index.html">← Home</a><span>/</span><span>Dungeon escape — 3D prototype</span></div>
+  <header class="phead">
+    <h1>Dungeon escape — 3D prototype</h1>
+    <p class="lead">Trapped underground, guarded by knights. A third-person controller with sprint and crouch, a health system, and melee attacks that find the nearest enemy.</p>
+    <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Blender</span></div>
+  </header>
+  <section class="psec">
+    <h2>The idea</h2>
+    <p>You&#x27;re trapped in a dungeon and have to escape. WASD to walk, Ctrl to crawl under short gaps, which opens up routes you couldn&#x27;t reach before. Doors stay locked until every enemy in the area is beaten and you&#x27;re holding the key. Some areas are only reachable across bridges, and one misstep into the lava drops your health to zero.</p>
+    
+  </section>
+  <section class="psec">
+    <h2>Third-person movement</h2>
+    <p>A CharacterController with gravity, jump height, walk and sprint speed, and a crouch that lerps the controller height and the camera down. isGrounded is a Physics.Raycast straight down, so the jump only works when you&#x27;re actually standing on something.</p>
+    <div class="shots"><figure><img src="../assets/scripts/dungeon-code-movement.png" alt="Third-person movement script" width="626" height="514" loading="lazy" decoding="async"><figcaption>Third_Person_Movement.cs</figcaption></figure><figure><img src="../assets/scripts/dungeon-code-crouch.png" alt="Third-person movement script" width="882" height="648" loading="lazy" decoding="async"><figcaption>Third_Person_Movement.cs (gravity, crouch)</figcaption></figure><figure><img src="../assets/scripts/dungeon-code-3.png" alt="Third-person movement script" width="709" height="165" loading="lazy" decoding="async"><figcaption>Third_Person_Movement.cs (sprint)</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Health and damage</h2>
+    <p>Max health is 100. TakeDamage subtracts the amount, updates the health bar, and calls Die() when it reaches 0. When the player dies they respawn at the last checkpoint with health reset.</p>
+    <div class="shots"><figure><img src="../assets/scripts/dungeon-code-damage.png" alt="Health and damage script" width="1221" height="382" loading="lazy" decoding="async"><figcaption>PlayerHealth.cs</figcaption></figure><figure><img src="../assets/scripts/dungeon-code-2.png" alt="Health and damage script" width="1237" height="425" loading="lazy" decoding="async"><figcaption>PlayerAttack.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Attacking the nearest enemy</h2>
+    <p>Left click finds every EnemyHealth in the scene, measures the distance to each, and damages the first one inside the equipped weapon&#x27;s range. A cooldown based on the weapon&#x27;s speed stops you spamming it.</p>
+    <div class="shots"><figure><img src="../assets/scripts/dungeon-code-attack.png" alt="Attacking the nearest enemy script" width="1036" height="644" loading="lazy" decoding="async"><figcaption>PlayerAttack.cs (Update)</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Typed up: AttackNearbyEnemies() — who&#x27;s in range?</h2>
+    <div class="codewrap">
+      <figure class="codefig">
+        <figcaption><span class="dot"></span><span class="dot"></span><span class="dot"></span> AttackNearbyEnemies()</figcaption>
+<pre><code><span class="kw">void</span> <span class="fn">AttackNearbyEnemies</span>()
+{
+    <span class="ty">EnemyHealth</span>[] enemies = <span class="ty">GameObject</span>.FindObjectsOfType&lt;<span class="ty">EnemyHealth</span>&gt;();
+
+    <span class="kw">foreach</span> (<span class="ty">EnemyHealth</span> enemy <span class="kw">in</span> enemies)
+    {
+        <span class="kw">float</span> distance = <span class="ty">Vector3</span>.<span class="fn">Distance</span>(transform.position, enemy.transform.position);
+
+        <span class="kw">if</span> (distance &lt;= Equipped.range)
+        {
+            enemy.<span class="fn">TakeDamage</span>((<span class="kw">int</span>)Equipped.damage);
+            <span class="ty">Debug</span>.<span class="fn">Log</span>(<span class="st">$&quot;Attacked {enemy.name} for {Equipped.damage} damage!&quot;</span>);
+            <span class="kw">break</span>;
+        }
+    }
+}</code></pre>
+      </figure>
+      <ol class="callouts"><li><b>→</b><span>Same shape as the coin-finding loop in Coin Vacuum: get a list, measure distances, act on the one that qualifies. break stops after the first hit so one swing hits one enemy.</span></li></ol>
+    </div>
+  </section><section class="psec"><h2>Pictures</h2><div class="gallery"><figure><img src="../assets/dungeon-storyboard-3.jpg" alt="Scenes 1–3 of the storyboard: trapped, defeat the guard, door unlocks." width="1227" height="353" loading="lazy" decoding="async"><figcaption>Scenes 1–3 of the storyboard: trapped, defeat the guard, door unlocks.</figcaption></figure><figure><img src="../assets/dungeon-storyboard-2.jpg" alt="Scenes 4–6: next guard, door, cross the bridge." width="1228" height="377" loading="lazy" decoding="async"><figcaption>Scenes 4–6: next guard, door, cross the bridge.</figcaption></figure><figure><img src="../assets/dungeon-storyboard-1.jpg" alt="Scenes 7–9: three more guards, exit unlocks, escape." width="1227" height="351" loading="lazy" decoding="async"><figcaption>Scenes 7–9: three more guards, exit unlocks, escape.</figcaption></figure></div></section><div class="pn"><a href="pong.html">← 2D Pong</a><a href="knight.html">Knight — my first 3D model →</a></div></main><footer>
+  <span>May · Portfolio</span>
+  <span>Built at Overworld AMP</span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');if(!b)return;
+  b.addEventListener('click',function(){
+    var r=document.documentElement,cur=r.getAttribute('data-theme');
+    var sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+    var now=cur?(cur==='dark'?'light':'dark'):(sysDark?'light':'dark');
+    r.setAttribute('data-theme',now);try{localStorage.setItem('may-theme',now);}catch(e){}
+  });
+  // hover previews
+  document.querySelectorAll('.card').forEach(function(c){
+    var v=c.querySelector('video');if(!v)return;
+    c.addEventListener('mouseenter',function(){if(!v.src){v.src=v.dataset.src;}v.play().then(function(){v.classList.add('on')}).catch(function(){});});
+    c.addEventListener('mouseleave',function(){v.pause();v.classList.remove('on');});
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2D Endless Faller — May</title>
+<meta name="description" content="May's portfolio: Unity games written in C#, a 3D dungeon prototype, 3D modelling and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,800;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../assets/sprite-rocket.png">
+<script>
+(function(){try{var t=localStorage.getItem('may-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"><i style="--x:0%;--y:0%;--d:0.0s;--s:1px"></i><i style="--x:37%;--y:53%;--d:0.6s;--s:2px"></i><i style="--x:74%;--y:6%;--d:1.2s;--s:3px"></i><i style="--x:11%;--y:59%;--d:1.8s;--s:1px"></i><i style="--x:48%;--y:12%;--d:2.4s;--s:2px"></i><i style="--x:85%;--y:65%;--d:3.0s;--s:3px"></i><i style="--x:22%;--y:18%;--d:3.6s;--s:1px"></i><i style="--x:59%;--y:71%;--d:0.0s;--s:2px"></i><i style="--x:96%;--y:24%;--d:0.6s;--s:3px"></i><i style="--x:33%;--y:77%;--d:1.2s;--s:1px"></i><i style="--x:70%;--y:30%;--d:1.8s;--s:2px"></i><i style="--x:7%;--y:83%;--d:2.4s;--s:3px"></i><i style="--x:44%;--y:36%;--d:3.0s;--s:1px"></i><i style="--x:81%;--y:89%;--d:3.6s;--s:2px"></i><i style="--x:18%;--y:42%;--d:0.0s;--s:3px"></i><i style="--x:55%;--y:95%;--d:0.6s;--s:1px"></i><i style="--x:92%;--y:48%;--d:1.2s;--s:2px"></i><i style="--x:29%;--y:1%;--d:1.8s;--s:3px"></i><i style="--x:66%;--y:54%;--d:2.4s;--s:1px"></i><i style="--x:3%;--y:7%;--d:3.0s;--s:2px"></i><i style="--x:40%;--y:60%;--d:3.6s;--s:3px"></i><i style="--x:77%;--y:13%;--d:0.0s;--s:1px"></i><i style="--x:14%;--y:66%;--d:0.6s;--s:2px"></i><i style="--x:51%;--y:19%;--d:1.2s;--s:3px"></i><i style="--x:88%;--y:72%;--d:1.8s;--s:1px"></i><i style="--x:25%;--y:25%;--d:2.4s;--s:2px"></i><i style="--x:62%;--y:78%;--d:3.0s;--s:3px"></i><i style="--x:99%;--y:31%;--d:3.6s;--s:1px"></i><i style="--x:36%;--y:84%;--d:0.0s;--s:2px"></i><i style="--x:73%;--y:37%;--d:0.6s;--s:3px"></i><i style="--x:10%;--y:90%;--d:1.2s;--s:1px"></i><i style="--x:47%;--y:43%;--d:1.8s;--s:2px"></i><i style="--x:84%;--y:96%;--d:2.4s;--s:3px"></i><i style="--x:21%;--y:49%;--d:3.0s;--s:1px"></i><i style="--x:58%;--y:2%;--d:3.6s;--s:2px"></i><i style="--x:95%;--y:55%;--d:0.0s;--s:3px"></i><i style="--x:32%;--y:8%;--d:0.6s;--s:1px"></i><i style="--x:69%;--y:61%;--d:1.2s;--s:2px"></i><i style="--x:6%;--y:14%;--d:1.8s;--s:3px"></i><i style="--x:43%;--y:67%;--d:2.4s;--s:1px"></i><i style="--x:80%;--y:20%;--d:3.0s;--s:2px"></i><i style="--x:17%;--y:73%;--d:3.6s;--s:3px"></i><i style="--x:54%;--y:26%;--d:0.0s;--s:1px"></i><i style="--x:91%;--y:79%;--d:0.6s;--s:2px"></i><i style="--x:28%;--y:32%;--d:1.2s;--s:3px"></i><i style="--x:65%;--y:85%;--d:1.8s;--s:1px"></i><i style="--x:2%;--y:38%;--d:2.4s;--s:2px"></i><i style="--x:39%;--y:91%;--d:3.0s;--s:3px"></i><i style="--x:76%;--y:44%;--d:3.6s;--s:1px"></i><i style="--x:13%;--y:97%;--d:0.0s;--s:2px"></i><i style="--x:50%;--y:50%;--d:0.6s;--s:3px"></i><i style="--x:87%;--y:3%;--d:1.2s;--s:1px"></i><i style="--x:24%;--y:56%;--d:1.8s;--s:2px"></i><i style="--x:61%;--y:9%;--d:2.4s;--s:3px"></i><i style="--x:98%;--y:62%;--d:3.0s;--s:1px"></i><i style="--x:35%;--y:15%;--d:3.6s;--s:2px"></i><i style="--x:72%;--y:68%;--d:0.0s;--s:3px"></i><i style="--x:9%;--y:21%;--d:0.6s;--s:1px"></i><i style="--x:46%;--y:74%;--d:1.2s;--s:2px"></i><i style="--x:83%;--y:27%;--d:1.8s;--s:3px"></i><i style="--x:20%;--y:80%;--d:2.4s;--s:1px"></i><i style="--x:57%;--y:33%;--d:3.0s;--s:2px"></i><i style="--x:94%;--y:86%;--d:3.6s;--s:3px"></i><i style="--x:31%;--y:39%;--d:0.0s;--s:1px"></i><i style="--x:68%;--y:92%;--d:0.6s;--s:2px"></i><i style="--x:5%;--y:45%;--d:1.2s;--s:3px"></i><i style="--x:42%;--y:98%;--d:1.8s;--s:1px"></i><i style="--x:79%;--y:51%;--d:2.4s;--s:2px"></i><i style="--x:16%;--y:4%;--d:3.0s;--s:3px"></i><i style="--x:53%;--y:57%;--d:3.6s;--s:1px"></i></div><div class="wrap"><nav>
+  <a class="logo" href="../index.html"><img src="../assets/sprite-rocket.png" alt="">May</a>
+  <ul><li><a href="../index.html#games">Games</a></li><li><a href="../index.html#code">Code</a></li><li><a href="../index.html#growth">Growth</a></li><li><a href="../index.html#more">More</a></li><li><button class="pill" id="theme" type="button" aria-label="Switch between light and dark">☾ / ☀</button></li></ul>
+</nav><main id="main">
+  <div class="crumbs"><a href="../index.html">← Home</a><span>/</span><span>2D Endless Faller</span></div>
+  <header class="phead">
+    <h1>2D Endless Faller</h1>
+    <p class="lead">A ball that has to survive 90 seconds hopping between platforms. Some rise, some sink, so you have to plan each landing.</p>
+    <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span></div>
+  </header>
+  <section class="psec" style="border-top:0;padding-top:0">
+    <video class="media" src="../assets/endless-faller-gameplay.mp4" poster="../assets/endless-faller-thumb.jpg" controls preload="none" playsinline></video>
+  </section>
+  <section class="psec">
+    <h2>Controlling the player</h2>
+    <p>The player moves on the x and y axis, translated from the key being pressed: left, right, jump or fall. Putting it in Update lets it check every frame whether the key is down. These keybinds are well known from other games, which makes it accessible to the player.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-playermovement.png" alt="Controlling the player script" width="658" height="468" loading="lazy" decoding="async"><figcaption>PlayerMovement.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Moving platforms</h2>
+    <p>A public integer for speed, which can be modified in the Inspector. It&#x27;s multiplied by Vector2 and by time to create distance, and if that takes the platform out of bounds the platform is destroyed.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-platformmovement.png" alt="Moving platforms script" width="892" height="470" loading="lazy" decoding="async"><figcaption>PlatformMovement.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Spawning platforms up and down</h2>
+    <p>The platform prefabs are a public GameObject array so they can be dragged into the Inspector. As long as the timer is higher than the spawn time (2 seconds) it creates a platform at a random offset between -5 and 5, then resets the timer. The speed is positive going up and negative going down.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-spawningup.png" alt="Spawning platforms up and down script" width="925" height="451" loading="lazy" decoding="async"><figcaption>SpawningUp.cs</figcaption></figure><figure><img src="../assets/scripts/endless-faller-spawningdown.png" alt="Spawning platforms up and down script" width="885" height="454" loading="lazy" decoding="async"><figcaption>SpawningDown.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Timer</h2>
+    <p>Starts at 100 and subtracts 1 each second with Time.deltaTime. A public text shows the player how long they have left. If the player dies the game restarts and so does the timer.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-timer.png" alt="Timer script" width="584" height="507" loading="lazy" decoding="async"><figcaption>Timer.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Restart</h2>
+    <p>If the player touches an out-of-bounds trigger the active scene reloads and the score resets to zero.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-restart.png" alt="Restart script" width="613" height="347" loading="lazy" decoding="async"><figcaption>Restart.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Scoreboard</h2>
+    <p>Score starts at 0 and goes up by 1 for each platform the player touches, shown on screen through the text.</p>
+    <div class="shots"><figure><img src="../assets/scripts/endless-faller-scoremanager.png" alt="Scoreboard script" width="804" height="639" loading="lazy" decoding="async"><figcaption>ScoreManager.cs</figcaption></figure></div>
+  </section>
+  <section class="psec">
+    <h2>Typed up: Spawning.cs — a platform every two seconds</h2>
+    <div class="codewrap">
+      <figure class="codefig">
+        <figcaption><span class="dot"></span><span class="dot"></span><span class="dot"></span> Spawning.cs</figcaption>
+<pre><code><span class="kw">using</span> UnityEngine;
+
+<span class="kw">public</span> <span class="kw">class</span> Spawning : <span class="ty">MonoBehaviour</span>
+{
+    <span class="kw">public</span> <span class="ty">GameObject</span>[] platformPrefabs;
+    <span class="kw">public</span> <span class="kw">float</span> spawnTime = <span class="nu">2f</span>;
+    <span class="kw">private</span> <span class="kw">float</span> timer;
+
+    <span class="kw">void</span> <span class="fn">Update</span>()
+    {
+        timer += <span class="ty">Time</span>.deltaTime;
+        <span class="kw">if</span> (timer &gt; spawnTime)
+        {
+            <span class="kw">int</span> index = <span class="ty">Random</span>.<span class="fn">Range</span>(<span class="nu">0</span>, platformPrefabs.Length);
+            <span class="ty">Vector3</span> RandomOffset = <span class="ty">Random</span>.<span class="fn">Range</span>(-<span class="nu">5</span>, <span class="nu">5</span>) * <span class="ty">Vector3</span>.left;
+            <span class="fn">Instantiate</span>(platformPrefabs[index], transform.position + RandomOffset, <span class="ty">Quaternion</span>.identity);
+            timer = <span class="nu">0f</span>;
+        }
+    }
+}</code></pre>
+      </figure>
+      <ol class="callouts"><li><b>→</b><span>A timer that fills up with Time.deltaTime, picks a random prefab and a random sideways offset, spawns it, and starts counting again. The same pattern spawns the pipes in Flappy Bird.</span></li></ol>
+    </div>
+  </section><div class="pn"><a href="asteroids.html">← 2D Asteroids</a><a href="flappy-bird.html">Flappy Bird →</a></div></main><footer>
+  <span>May · Portfolio</span>
+  <span>Built at Overworld AMP</span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');if(!b)return;
+  b.addEventListener('click',function(){
+    var r=document.documentElement,cur=r.getAttribute('data-theme');
+    var sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+    var now=cur?(cur==='dark'?'light':'dark'):(sysDark?'light':'dark');
+    r.setAttribute('data-theme',now);try{localStorage.setItem('may-theme',now);}catch(e){}
+  });
+  // hover previews
+  document.querySelectorAll('.card').forEach(function(c){
+    var v=c.querySelector('video');if(!v)return;
+    c.addEventListener('mouseenter',function(){if(!v.src){v.src=v.dataset.src;}v.play().then(function(){v.classList.add('on')}).catch(function(){});});
+    c.addEventListener('mouseleave',function(){v.pause();v.classList.remove('on');});
+  });
+})();
+</script>
+</body>
+</html>

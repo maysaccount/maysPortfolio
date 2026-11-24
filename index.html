@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>May — Portfolio</title>
+<meta name="description" content="May's portfolio: Unity games written in C#, a 3D dungeon prototype, 3D modelling and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,800;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/sprite-rocket.png">
+<script>
+(function(){try{var t=localStorage.getItem('may-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sky" aria-hidden="true"><i style="--x:0%;--y:0%;--d:0.0s;--s:1px"></i><i style="--x:37%;--y:53%;--d:0.6s;--s:2px"></i><i style="--x:74%;--y:6%;--d:1.2s;--s:3px"></i><i style="--x:11%;--y:59%;--d:1.8s;--s:1px"></i><i style="--x:48%;--y:12%;--d:2.4s;--s:2px"></i><i style="--x:85%;--y:65%;--d:3.0s;--s:3px"></i><i style="--x:22%;--y:18%;--d:3.6s;--s:1px"></i><i style="--x:59%;--y:71%;--d:0.0s;--s:2px"></i><i style="--x:96%;--y:24%;--d:0.6s;--s:3px"></i><i style="--x:33%;--y:77%;--d:1.2s;--s:1px"></i><i style="--x:70%;--y:30%;--d:1.8s;--s:2px"></i><i style="--x:7%;--y:83%;--d:2.4s;--s:3px"></i><i style="--x:44%;--y:36%;--d:3.0s;--s:1px"></i><i style="--x:81%;--y:89%;--d:3.6s;--s:2px"></i><i style="--x:18%;--y:42%;--d:0.0s;--s:3px"></i><i style="--x:55%;--y:95%;--d:0.6s;--s:1px"></i><i style="--x:92%;--y:48%;--d:1.2s;--s:2px"></i><i style="--x:29%;--y:1%;--d:1.8s;--s:3px"></i><i style="--x:66%;--y:54%;--d:2.4s;--s:1px"></i><i style="--x:3%;--y:7%;--d:3.0s;--s:2px"></i><i style="--x:40%;--y:60%;--d:3.6s;--s:3px"></i><i style="--x:77%;--y:13%;--d:0.0s;--s:1px"></i><i style="--x:14%;--y:66%;--d:0.6s;--s:2px"></i><i style="--x:51%;--y:19%;--d:1.2s;--s:3px"></i><i style="--x:88%;--y:72%;--d:1.8s;--s:1px"></i><i style="--x:25%;--y:25%;--d:2.4s;--s:2px"></i><i style="--x:62%;--y:78%;--d:3.0s;--s:3px"></i><i style="--x:99%;--y:31%;--d:3.6s;--s:1px"></i><i style="--x:36%;--y:84%;--d:0.0s;--s:2px"></i><i style="--x:73%;--y:37%;--d:0.6s;--s:3px"></i><i style="--x:10%;--y:90%;--d:1.2s;--s:1px"></i><i style="--x:47%;--y:43%;--d:1.8s;--s:2px"></i><i style="--x:84%;--y:96%;--d:2.4s;--s:3px"></i><i style="--x:21%;--y:49%;--d:3.0s;--s:1px"></i><i style="--x:58%;--y:2%;--d:3.6s;--s:2px"></i><i style="--x:95%;--y:55%;--d:0.0s;--s:3px"></i><i style="--x:32%;--y:8%;--d:0.6s;--s:1px"></i><i style="--x:69%;--y:61%;--d:1.2s;--s:2px"></i><i style="--x:6%;--y:14%;--d:1.8s;--s:3px"></i><i style="--x:43%;--y:67%;--d:2.4s;--s:1px"></i><i style="--x:80%;--y:20%;--d:3.0s;--s:2px"></i><i style="--x:17%;--y:73%;--d:3.6s;--s:3px"></i><i style="--x:54%;--y:26%;--d:0.0s;--s:1px"></i><i style="--x:91%;--y:79%;--d:0.6s;--s:2px"></i><i style="--x:28%;--y:32%;--d:1.2s;--s:3px"></i><i style="--x:65%;--y:85%;--d:1.8s;--s:1px"></i><i style="--x:2%;--y:38%;--d:2.4s;--s:2px"></i><i style="--x:39%;--y:91%;--d:3.0s;--s:3px"></i><i style="--x:76%;--y:44%;--d:3.6s;--s:1px"></i><i style="--x:13%;--y:97%;--d:0.0s;--s:2px"></i><i style="--x:50%;--y:50%;--d:0.6s;--s:3px"></i><i style="--x:87%;--y:3%;--d:1.2s;--s:1px"></i><i style="--x:24%;--y:56%;--d:1.8s;--s:2px"></i><i style="--x:61%;--y:9%;--d:2.4s;--s:3px"></i><i style="--x:98%;--y:62%;--d:3.0s;--s:1px"></i><i style="--x:35%;--y:15%;--d:3.6s;--s:2px"></i><i style="--x:72%;--y:68%;--d:0.0s;--s:3px"></i><i style="--x:9%;--y:21%;--d:0.6s;--s:1px"></i><i style="--x:46%;--y:74%;--d:1.2s;--s:2px"></i><i style="--x:83%;--y:27%;--d:1.8s;--s:3px"></i><i style="--x:20%;--y:80%;--d:2.4s;--s:1px"></i><i style="--x:57%;--y:33%;--d:3.0s;--s:2px"></i><i style="--x:94%;--y:86%;--d:3.6s;--s:3px"></i><i style="--x:31%;--y:39%;--d:0.0s;--s:1px"></i><i style="--x:68%;--y:92%;--d:0.6s;--s:2px"></i><i style="--x:5%;--y:45%;--d:1.2s;--s:3px"></i><i style="--x:42%;--y:98%;--d:1.8s;--s:1px"></i><i style="--x:79%;--y:51%;--d:2.4s;--s:2px"></i><i style="--x:16%;--y:4%;--d:3.0s;--s:3px"></i><i style="--x:53%;--y:57%;--d:3.6s;--s:1px"></i></div>
+<div class="wrap">
+<nav>
+  <a class="logo" href="index.html"><img src="assets/sprite-rocket.png" alt="">May</a>
+  <ul><li><a href="index.html#games">Games</a></li><li><a href="index.html#code">Code</a></li><li><a href="index.html#growth">Growth</a></li><li><a href="index.html#more">More</a></li><li><button class="pill" id="theme" type="button" aria-label="Switch between light and dark">☾ / ☀</button></li></ul>
+</nav>
+<main id="main">
+  <header class="hero">
+    <div>
+      <span class="eyebrow">Coder · Unity C# · Overworld AMP</span>
+      <h1>Hi, I'm May.<br>I write the <span class="u">code<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 60 4, 120 20, 180 10 S 270 6, 297 12"/></svg></span> that makes games work.</h1>
+      <p class="lead"><b>Five Unity games written in C#</b> and a 3D dungeon prototype: movement, spawning, timers, scoring, enemy logic. I like the bit where the script compiles and the thing on screen finally does what I told it to.</p>
+      <div class="btns">
+        <a class="btn primary" href="#games">See the games →</a>
+        <a class="btn" href="#code">Read some code</a>
+      </div>
+    </div>
+    <div class="stage" id="stage" aria-label="A small game: move your pointer to collect coins">
+      <div class="score"><span><img src="assets/sprite-vacuum.png" alt="">you <b id="s-you">0</b></span><span><img src="assets/sprite-evil.png" alt="">evil <b id="s-evil">0</b></span></div>
+      <img class="rocket" src="assets/sprite-rocket.png" alt="">
+      <div class="live" id="you"><img src="assets/sprite-vacuum.png" alt=""></div>
+      <div class="live evil" id="evil"><img src="assets/sprite-evil.png" alt=""></div>
+      <p class="hint" id="hint">move your mouse (or tap) to hoover coins. the evil one goes for the nearest coin, same as in my game.</p>
+    </div>
+  </header>
+
+  <section id="games">
+    <div class="sec-head"><h2>Games I've built</h2><span>5 games · Unity · C#</span></div>
+    <div class="grid">
+      <a class="card" href="projects/coin-vacuum.html" style="--rot:-2deg">
+        <span class="tape"></span>
+        <span class="shot"><img src="assets/coin-vacuum-thumb.jpg" alt="" width="1280" height="720"><video muted loop playsinline preload="none" data-src="assets/coin-vacuum-gameplay.mp4" aria-hidden="true" tabindex="-1"></video></span>
+        <strong>2D Coin Vacuum</strong>
+        <p>Race an evil vacuum to 35 coins before 100 seconds run out. Fake coins cost you a point.</p>
+        <span class="tags">Collisions &amp; triggers · Score &amp; on-screen text · Spawning with prefabs</span>
+      </a>
+      <a class="card" href="projects/asteroids.html" style="--rot:1.5deg">
+        <span class="tape"></span>
+        <span class="shot"><img src="assets/asteroids-thumb.jpg" alt="" width="1280" height="720"><video muted loop playsinline preload="none" data-src="assets/asteroids-gameplay.mp4" aria-hidden="true" tabindex="-1"></video></span>
+        <strong>2D Asteroids</strong>
+        <p>Shoot the floating space rocks with your rocket. Crash into one and you lose a life; lose three and it&#x27;s over.</p>
+        <span class="tags">Collisions &amp; triggers · Score &amp; on-screen text · Spawning with prefabs</span>
+      </a>
+      <a class="card" href="projects/endless-faller.html" style="--rot:-1deg">
+        <span class="tape"></span>
+        <span class="shot"><img src="assets/endless-faller-thumb.jpg" alt="" width="1280" height="720"><video muted loop playsinline preload="none" data-src="assets/endless-faller-gameplay.mp4" aria-hidden="true" tabindex="-1"></video></span>
+        <strong>2D Endless Faller</strong>
+        <p>A ball that has to survive 90 seconds hopping between platforms. Some rise, some sink, so you have to plan each landing.</p>
+        <span class="tags">Collisions &amp; triggers · Score &amp; on-screen text · Spawning with prefabs</span>
+      </a>
+      <a class="card" href="projects/flappy-bird.html" style="--rot:2deg">
+        <span class="tape"></span>
+        <span class="shot"><img src="assets/flappy-bird-thumb.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"><video muted loop playsinline preload="none" data-src="assets/flappy-bird-gameplay.mp4" aria-hidden="true" tabindex="-1"></video></span>
+        <strong>Flappy Bird</strong>
+        <p>A 2D side-scroller. Every pipe you get past is a point. Touch one and the game resets.</p>
+        <span class="tags">Collisions &amp; triggers · Score &amp; on-screen text · Spawning with prefabs</span>
+      </a>
+      <a class="card" href="projects/pong.html" style="--rot:-1.5deg">
+        <span class="tape"></span>
+        <span class="shot"><img src="assets/pong-thumb.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"><video muted loop playsinline preload="none" data-src="assets/pong-gameplay.mp4" aria-hidden="true" tabindex="-1"></video></span>
+        <strong>2D Pong</strong>
+        <p>Pong, based on table tennis. The opponent watches where the ball is and moves to return it.</p>
+        <span class="tags">Collisions &amp; triggers · Score &amp; on-screen text · Enemy logic</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="code">
+    <div class="sec-head"><h2>From the source</h2><span>Controls.cs · 2D Asteroids</span></div>
+    <div class="codewrap">
+      <figure class="codefig">
+        <figcaption><span class="dot"></span><span class="dot"></span><span class="dot"></span> Controls.cs</figcaption>
+<pre><code><span class="kw">using</span> UnityEngine;
+
+<span class="kw">public</span> <span class="kw">class</span> Controls : <span class="ty">MonoBehaviour</span>
+{
+    <span class="kw">public</span> <span class="kw">float</span> speed = <span class="nu">0</span>;
+    <span class="kw">public</span> <span class="ty">Rigidbody2D</span> rigid;
+    <span class="kw">public</span> <span class="kw">float</span> turnspeed = <span class="nu">0</span>;
+    <span class="kw">public</span> <span class="ty">GameObject</span> ammoprefabs;
+
+    <span class="kw">void</span> <span class="fn">Update</span>()
+    {
+        <span class="kw">float</span> x = <span class="ty">Input</span>.<span class="fn">GetAxis</span>(<span class="st">&quot;Horizontal&quot;</span>);
+        <span class="kw">float</span> y = <span class="ty">Input</span>.<span class="fn">GetAxis</span>(<span class="st">&quot;Vertical&quot;</span>);
+        <span class="cm">//transform.Translate(transform.up * y * speed * Time.deltaTime);</span>
+        rigid.<span class="fn">MovePosition</span>(transform.position + (transform.up * y * speed));
+        <span class="cm">//transform.Rotate(0, 0, -x * turnspeed * Time.deltaTime);</span>
+        rigid.<span class="fn">MoveRotation</span>(rigid.rotation + (-x * turnspeed));
+        <span class="fn">ammo</span>();
+    }
+
+    <span class="kw">public</span> <span class="kw">void</span> <span class="fn">ammo</span>()
+    {
+        <span class="kw">if</span> (<span class="ty">Input</span>.<span class="fn">GetKeyDown</span>(<span class="ty">KeyCode</span>.Space))
+        {
+            <span class="fn">Instantiate</span>(ammoprefabs, transform.position, transform.rotation);
+        }
+    }
+}</code></pre>
+      </figure>
+      <ol class="callouts">
+        <li><b>1</b><span><strong>Read the input.</strong> GetAxis gives a number between -1 and 1 for the arrow keys, so one line handles left and right.</span></li>
+        <li><b>2</b><span><strong>Move with physics, not teleport.</strong> MovePosition on the Rigidbody2D keeps collisions working. The transform.Translate lines are still there, commented out, from the first attempt.</span></li>
+        <li><b>3</b><span><strong>Spawn a bullet.</strong> Instantiate copies the ammo prefab at the ship's position and rotation, so it flies the way the ship is facing.</span></li>
+        <li><b>→</b><span><a href="projects/asteroids.html">Every script in 2D Asteroids</a>, and a typed-up script on every game page.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="mechanics">
+    <div class="sec-head"><h2>Things I've coded</h2><span>and how many projects use them</span></div>
+    <div class="mech"><div class="m"><b>6</b><strong>Collisions &amp; triggers</strong><span>OnCollisionEnter2D / OnTriggerEnter2D for coins, pipes, asteroids and borders</span></div><div class="m"><b>5</b><strong>Score &amp; on-screen text</strong><span>TextMeshPro updated from a ScoreManager</span></div><div class="m"><b>4</b><strong>Spawning with prefabs</strong><span>Instantiate on a timer at a random position, Destroy when off-screen</span></div><div class="m"><b>4</b><strong>Restart the scene</strong><span>SceneManager.LoadScene when you fall, crash or run out of lives</span></div><div class="m"><b>4</b><strong>Rigidbody movement</strong><span>MovePosition / MoveRotation driven by Input.GetAxis</span></div><div class="m"><b>3</b><strong>Enemy logic</strong><span>Pong's paddle tracks the ball; the evil vacuum hunts the nearest coin</span></div><div class="m"><b>2</b><strong>Countdown timers</strong><span>Time.deltaTime subtracting each second; win or reload at zero</span></div><div class="m"><b>1</b><strong>Health &amp; damage</strong><span>currentHealth -= amount, a health bar, Die() at zero</span></div></div>
+  </section>
+
+  <section id="growth">
+    <div class="sec-head"><h2>How confident I feel</h2><span>out of 10, rated by me</span></div>
+    <div class="chart" id="chart">
+      <div class="key"><span><i style="background:var(--bar-before)"></i>Before the project</span><span><i style="background:var(--pink)"></i>After</span></div>
+      
+        <div class="row">
+          <span class="lbl">2D Coin Vacuum</span>
+          <span class="bars">
+            <span class="bar before" style="--v:3"><b>3</b></span>
+            <span class="bar after" style="--v:8"><b>8</b></span>
+          </span>
+        </div>
+        <div class="row">
+          <span class="lbl">2D Asteroids</span>
+          <span class="bars">
+            <span class="bar before" style="--v:4"><b>4</b></span>
+            <span class="bar after" style="--v:8"><b>8</b></span>
+          </span>
+        </div>
+        <div class="row">
+          <span class="lbl">2D Endless Faller</span>
+          <span class="bars">
+            <span class="bar before" style="--v:3"><b>3</b></span>
+            <span class="bar after" style="--v:7"><b>7</b></span>
+          </span>
+        </div>
+        <div class="row">
+          <span class="lbl">Flappy Bird</span>
+          <span class="bars">
+            <span class="bar before" style="--v:4"><b>4</b></span>
+            <span class="bar after" style="--v:8"><b>8</b></span>
+          </span>
+        </div>
+        <div class="row">
+          <span class="lbl">2D Pong</span>
+          <span class="bars">
+            <span class="bar before" style="--v:5"><b>5</b></span>
+            <span class="bar after" style="--v:8"><b>8</b></span>
+          </span>
+        </div>
+        <div class="row">
+          <span class="lbl">Dungeon escape — 3D prototype</span>
+          <span class="bars">
+            <span class="bar before" style="--v:2"><b>2</b></span>
+            <span class="bar after" style="--v:6"><b>6</b></span>
+          </span>
+        </div>
+      <small>Rated before starting and after finishing each project.</small>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="sec-head"><h2>Everything else</h2><span>3D · animation · design</span></div>
+    <div class="notes">
+      <a class="note" href="projects/dungeon-escape.html">
+        <span class="thumb"><img src="assets/knight-unity.jpg" alt="" width="686" height="507"></span><span class="eyebrow">Unity · C# · Blender</span>
+        <strong>Dungeon escape — 3D prototype</strong>
+        <p>Trapped underground, guarded by knights. A third-person controller with sprint and crouch, a health system, and melee attacks that find the nearest enemy.</p>
+      </a>
+      <a class="note" href="projects/knight.html">
+        <span class="thumb"><img src="assets/knight-textured.jpg" alt="" width="802" height="1011"></span><span class="eyebrow">Blender · Unity</span>
+        <strong>Knight — my first 3D model</strong>
+        <p>A low-poly knight built from a cube: block-out, loop cuts and extrusions, then textured and dropped into Unity.</p>
+      </a>
+      <a class="note" href="projects/animation.html">
+        <span class="thumb"><img src="assets/animation-thumb.jpg" alt="" width="1280" height="720"></span><span class="eyebrow">Blender · Unity</span>
+        <strong>Walk cycle and flip</strong>
+        <p>A rigged character with a confident walk cycle and a martial-arts flip, blocked out as key poses then cleaned up.</p>
+      </a>
+      <a class="note" href="projects/puzzle-labyrinth.html">
+        <span class="eyebrow">Pitch deck · Game design document</span>
+        <strong>Puzzle Labyrinth</strong>
+        <p>An escape-room puzzle game with story elements, set in liminal spaces. Pitched to the class and revised after feedback.</p>
+      </a>
+      <a class="note" href="projects/level-direction.html">
+        <span class="thumb"><img src="assets/level-blockout-1.jpg" alt="" width="798" height="666"></span><span class="eyebrow">Unity · Concept art</span>
+        <strong>Pastel mountain — 2.5D level</strong>
+        <p>A winter platformer level in a pastel palette, blocked out in Unity so the objects read clearly against the sky.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <blockquote class="quote">“Going forward I&#x27;d investigate and make sure it&#x27;s not too similar to something already out there, otherwise the product would be redundant in its quest to create a unique experience.”<cite>— from May&#x27;s pitch review</cite></blockquote>
+  </section>
+</main>
+<footer>
+  <span>May · Portfolio</span>
+  <span>Built at Overworld AMP</span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme');if(!b)return;
+  b.addEventListener('click',function(){
+    var r=document.documentElement,cur=r.getAttribute('data-theme');
+    var sysDark=matchMedia('(prefers-color-scheme: dark)').matches;
+    var now=cur?(cur==='dark'?'light':'dark'):(sysDark?'light':'dark');
+    r.setAttribute('data-theme',now);try{localStorage.setItem('may-theme',now);}catch(e){}
+  });
+  // hover previews
+  document.querySelectorAll('.card').forEach(function(c){
+    var v=c.querySelector('video');if(!v)return;
+    c.addEventListener('mouseenter',function(){if(!v.src){v.src=v.dataset.src;}v.play().then(function(){v.classList.add('on')}).catch(function(){});});
+    c.addEventListener('mouseleave',function(){v.pause();v.classList.remove('on');});
+  });
+})();
+</script>
+</body>
+</html>
+<script>
+(function(){
+  var st=document.getElementById('stage');if(!st)return;
+  var you=document.getElementById('you'),evil=document.getElementById('evil'),sy=document.getElementById('s-you'),se=document.getElementById('s-evil'),hint=document.getElementById('hint');
+  var tx=.3,ty=.55,px=.3,py=.55,ex=.75,ey=.3,coins=[],scoreY=0,scoreE=0,moved=false,t=0,n=0;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function spawn(fake){var c=document.createElement('div');c.className='coin'+(fake?' fake':'');
+    var o={el:c,x:.1+Math.random()*.8,y:.14+Math.random()*.7,fake:fake,born:performance.now()};
+    c.style.left=o.x*100+'%';c.style.top=o.y*100+'%';st.appendChild(c);coins.push(o);}
+  function point(e){var r=st.getBoundingClientRect();tx=Math.min(1,Math.max(0,(e.clientX-r.left)/r.width));ty=Math.min(1,Math.max(0,(e.clientY-r.top)/r.height));if(!moved){moved=true;hint.classList.add('off');}}
+  st.addEventListener('pointermove',point);st.addEventListener('pointerdown',point);
+  function eat(o,who){o.el.classList.add('gone');setTimeout(function(){o.el.remove()},260);
+    if(who==='you'){scoreY=Math.max(0,scoreY+(o.fake?-1:1));sy.textContent=scoreY;}else{scoreE=Math.max(0,scoreE+(o.fake?-1:1));se.textContent=scoreE;}}
+  function frame(now){
+    var dt=Math.min(.05,(now-(t||now))/1000);t=now;
+    px+=(tx-px)*(reduce?1:.12);py+=(ty-py)*(reduce?1:.12);
+    // the evil vacuum: head for the nearest real coin — same logic as Findcoin() in EvilPlayerControls.cs
+    var best=null,bd=9;coins.forEach(function(o){if(o.fake)return;var d=Math.hypot(o.x-ex,o.y-ey);if(d<bd){bd=d;best=o;}});
+    if(best){var d=Math.hypot(best.x-ex,best.y-ey)||1;ex+=(best.x-ex)/d*.22*dt;ey+=(best.y-ey)/d*.22*dt;}
+    you.style.left=px*100+'%';you.style.top=py*100+'%';evil.style.left=ex*100+'%';evil.style.top=ey*100+'%';
+    var R=.11;
+    for(var i=coins.length-1;i>=0;i--){var o=coins[i];
+      if(!o.el.classList.contains('gone')){
+        if(Math.hypot(o.x-px,o.y-py)<R&&moved){eat(o,'you');coins.splice(i,1);continue;}
+        if(Math.hypot(o.x-ex,o.y-ey)<R*.8){eat(o,'evil');coins.splice(i,1);continue;}
+        if(now-o.born>10000){o.el.classList.add('gone');setTimeout(function(el){el.remove()}.bind(null,o.el),260);coins.splice(i,1);}
+      }}
+    n+=dt; if(n>1.6&&coins.length<8){n=0;spawn(Math.random()<.25);}
+    requestAnimationFrame(frame);
+  }
+  spawn(false);spawn(false);spawn(true);
+  requestAnimationFrame(frame);
+})();
+</script>
